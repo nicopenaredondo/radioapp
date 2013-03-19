@@ -1,0 +1,146 @@
+<html>
+<head>
+	<title>Radio APP CMS</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-cyborg.css">
+	<link rel="stylesheet" type="text/css" href="assets/wysiwyg/lib/css/bootstrap-wysihtml5.css">
+	<link rel="stylesheet" type="text/css" href="assets/wysiwyg/lib/css/bootstrap-wysihtml5.css">
+	<link rel="stylesheet" type="text/css" href="assets/wysiwyg/lib/css/wysiwyg-color.css">
+</head>
+<body style="background-image: url('assets/bg/carbon.png');">
+	<div class="navbar">
+	  <div class="navbar-inner">
+	    <a class="brand" href="#">Administrator</a>
+	    <ul class="nav">
+	      <li><a href="index.html">Home</a></li>
+	      <li><a href="dj.html">DJ's</a></li>
+	      <li><a href="shows.html">Shows</a></li>
+	      <li><a href="events.html">Events</a></li>
+	      <li><a href="links.html">Links</a></li>
+	      <li class="active"><a href="publish.html">Publish</a></li>
+	    </ul>
+	    <div class="btn-group pull-right">
+	     	<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+					<i class="icon-user"></i>User<span class="caret"></span>
+				</a>
+					<ul class="dropdown-menu">
+						<li><a href="#"><i class="icon-wrench"></i> Settings</a></li>
+						<li class="divider"></li>
+						<li><a href="#"><i class="icon-share"></i> Logout</a></li>
+					</ul>
+			</div>
+	  </div><!--navbar-inner-->
+	</div><!--navbar-->
+	<div class = "container">
+		<h1>Publish your app</h1>
+		<div class="row" style="text-align:justify">
+			<div class="span12">
+				<div class="alert alert-info">
+				  <strong>Important Note : </strong>
+					<p>
+					Please wait for a few minutes for the emulator to load. It may take a while for your uploads to be compiled. If you choose to go back immediately, the process of loading the compilation of your contents may have to be repeated. 
+					</p>
+					<p>
+					This emulator serves as a preview for your application. However, please take note that clicking the social networking icons will launch pop-up windows. For your actual application, it will not be the same. Instead, it will be a smooth transition within the same window.
+					</p>
+				</div>
+			</div><!--span11-->		
+		</div><!--row-->
+		<div class="well">
+			<div class="row">
+				<div class="span6">
+					<form class="form-horizontal" action='' method="POST">
+				  <fieldset>
+				    <div id="legend">
+				      <legend class="">Test 89.9</legend>
+				    </div>
+				    <div class="control-group">
+				      <!-- Username -->
+				      <label class="control-label"  for="app_icon">App Icon Launcher</label>
+				      <div class="controls">
+				        <input type="file" id="app_icon" name="app_icon_launcher" placeholder="" class="input-xlarge">
+				      </div>
+				    </div>
+				 
+				    <div class="control-group">
+				      <!-- E-mail -->
+				      <label class="control-label" for="app_name">App Name</label>
+				      <div class="controls">
+				        <input type="text" id="app_name" name="app_name" placeholder="" class="input-xlarge">
+				      </div>
+				    </div>
+				 
+				    <div class="control-group">
+				      <!-- Password-->
+				      <label class="control-label" for="app_description">App Description</label>
+				      <div class="controls">
+				        <textarea rows="5"id="app_description" name="app_description" placeholder="" class="input-xlarge"></textarea>
+				      </div>
+				    </div>
+				 
+				    <div class="control-group">
+				      <!-- Password -->
+				      <label class="control-label"  for="primary_category">Primary Category :</label>
+				      <div class="controls">
+				       <select name="primary_category" class="input-xlarge"></select>
+				      </div>
+				    </div>
+
+				    <div class="control-group">
+				      <!-- Password -->
+				      <label class="control-label"  for="secondary_category">Secondary Category: <i>(optonal)</i></label>
+				      <div class="controls">
+				       <select name="secondary_category" class="input-xlarge"></select>
+				      </div>
+				    </div>
+
+				    <div class="control-group">
+				      <!-- Password -->
+				      <label class="control-label"  for="keywords">Keywords</label>
+				      <div class="controls">
+				       <input type="text" id="keywords" name="keywords" class="input-xlarge">
+				      </div>
+				    </div>
+				    <u><h4>Terms and Condition</h4></u>
+				    <input type="checkbox" name="check_1"> I have uploaded all the contents for our radio station. 	 </br>
+				    <input type="checkbox" name="check_1"> The contents uploaded are our original content. </br></br>
+				    <div class="alert">
+				    	<i>(Clicking this button tells us that your account is ready for actual app creation. We'll notify you once it's available in iTunes, Google Play, etc.)</i>
+				    	</br></br>
+				    	<i>(Note: For customization of your app, email us at support@radioapp.fm)</i>
+				    </div> 
+				    <div class="control-group">
+				      <!-- Button -->
+				      <div class="controls">
+				        <button class="btn btn-primary">Submit</button>
+				      </div>
+				    </div>
+				  </fieldset>
+				</form>
+				</div><!--span6-->
+				<div class="span5" style="text-align:center;">
+					<img src="assets/img/iphone.png">
+				</div><!--span5-->
+			</div><!--row-->
+		</div><!--well-->
+		<p style="text-align:center;">Powered by <a class="" href="http://egg.ph">Entertainment Gateway Group</a></p>
+	</div><!--container-->
+	
+</body>
+<script type="text/javascript" src="assets/js/jquery1.9.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="assets/wysiwyg/lib/js/wysihtml5-0.3.0.js"></script>
+<script type="text/javascript" src="assets/wysiwyg/lib/js/bootstrap-wysihtml5.js"></script>
+<script>
+$(document).ready(function(){
+	$('#app_description').wysihtml5({
+    "font-styles": false, //Font styling, e.g. h1, h2, etc. Default true
+    "emphasis"   : false, //Italics, bold, etc. Default true
+    "lists"      : true, //(Un)ordered lists, e.g. Bullets, Numbers. Default true
+    "html"       : false, //Button which allows you to edit the generated HTML. Default false
+    "link"       : false, //Button to insert a link. Default true
+    "image"      : false, //Button to insert an image. Default true,
+    "color"      : false //Button to change color of font  
+   });
+});
+</script>
+</html>
